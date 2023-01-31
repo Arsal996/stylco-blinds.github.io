@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Questrial&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.all-navbar.fixed-nav {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #0F0F0F;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
+.all-navbar .top-nav {
+  padding: 1rem 6%;
+  border-bottom: 1px solid #E0E5E5;
+}
+.all-navbar .top-nav .top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-top: 1rem;
+}
+.all-navbar .top-nav .top-menu ul {
+  display: flex;
+}
+.all-navbar .top-nav .top-menu ul li {
+  list-style: none;
+  padding: 0rem 2rem;
+}
+.all-navbar .top-nav .top-menu ul li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0F0F0F;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease-in-out;
+}
+.all-navbar .top-nav .top-menu ul li a:hover {
+  color: #F9B11C;
+}
+.all-navbar .top-nav .top-menu ul .phone {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0 2rem;
+}
+.all-navbar .top-nav .top-menu ul .phone img {
+  width: 15px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.all-navbar .top-nav .top-menu ul .phone li {
+  list-style: none;
+  padding: 0;
+}
+.all-navbar .top-nav .top-menu ul .phone li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0F0F0F;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  pointer-events: none;
+}
+.all-navbar .top-nav .top-menu ul .fd-location {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0 2rem;
+}
+.all-navbar .top-nav .top-menu ul .fd-location img {
+  width: 15px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.all-navbar .top-nav .top-menu ul .fd-location li {
+  list-style: none;
+  padding: 0;
+}
+.all-navbar .top-nav .top-menu ul .fd-location li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0F0F0F;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease-in-out;
+}
+.all-navbar .top-nav .top-menu ul .fd-location li a:hover {
+  color: #F9B11C;
+}
+.all-navbar .sub-menu {
+  border-bottom: 1px solid #E0E5E5;
+}
+.all-navbar .sub-menu .menu-list {
+  padding: 1rem 10% 0 0;
+  display: flex;
+  justify-content: right;
+}
+.all-navbar .sub-menu .menu-list ul {
+  display: flex;
+  align-items: center;
+}
+.all-navbar .sub-menu .menu-list ul li {
+  list-style: none;
+  padding: 0 2rem;
+}
+.all-navbar .sub-menu .menu-list ul li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0F0F0F;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.all-navbar .sub-menu .menu-list ul li a:hover {
+  color: #F9B11C;
+}
+.all-navbar .sub-menu .menu-list ul button {
+  margin-left: 3rem;
+  padding: 0.4rem 1rem;
+  background-color: #F9B11C;
+  border: none;
+}
+.all-navbar .sub-menu .menu-list ul button a {
+  border-radius: 1px;
+  color: #0F0F0F;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-family: "Gilroy", sans-serif;
+}
+.all-navbar .sub-menu .menu-list ul .search-icon {
+  margin-left: 2rem;
+}
+.all-navbar .sub-menu .menu-list ul .search-icon i {
+  text-decoration: none;
+  color: #0F0F0F;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.all-navbar .sub-menu .menu-list ul .search-icon i:hover {
+  color: #F9B11C;
+}
+
+.all-navbar .top-nav .top-menu ul li .links-clr {
+  color: #0F0F0F;
+}
+
+@media only screen and (max-width: 1650px) {
+  .all-navbar .top-nav {
+    padding: 1rem 4%;
+  }
+  .all-navbar .sub-menu .menu-list {
+    padding: 1rem 8% 0 0;
+  }
+}/*# sourceMappingURL=navbar.css.map */

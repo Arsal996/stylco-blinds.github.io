@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Questrial&display=swap');
+
+// color varialbes 
+
+$light-grey: #E0E5E5;
+$black: #0F0F0F;
+$orange: #FF8600;
+$primary-blue: #476C9B;
+$white: #FFFFFF;
+$gray: #6B7680;
+$red: #F21B3F;
+$yellow-brand: #F9B11C;
+$pink: #E65F99;
+$purple: #551A8B;
+
+// font uses 
+
+$main-font: 'Gilroy', sans-serif;
+$heading-font: 'Playfair Display', serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.all-navbar.fixed-nav{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    color: $black;
+    box-shadow: 0px 15px 10px -15px #111;  
+}
+
+
+.all-navbar {
+        //  color: $white;
+        .top-nav {
+            padding: 1rem 6%;
+            border-bottom: 1px solid $light-grey;
+
+            .top-menu {
+
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-top: 1rem;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        list-style: none;
+                        padding: 0rem 2rem;
+
+                        a{
+                            text-decoration: none;
+                            font-family: $main-font;
+                            color: $black;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            transition: all .3s ease-in-out;
+
+                            &:hover{
+                                color: $yellow-brand;
+                            }
+                        }
+                    }
+
+                    .phone {
+                        display: flex;
+                        align-items: center;
+                        margin: 0 1rem 0 2rem;
+
+                        img {
+                            width: 15px;
+                            height: 20px;
+                            margin-right: .5rem;
+                        }
+
+                        li {
+                            list-style: none;
+                            padding: 0;
+
+                            a {
+                                text-decoration: none;
+                                font-family: $main-font;
+                                color: $black;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 19px;
+                                pointer-events: none;
+                            }
+                        }
+
+                     }
+                        
+                     .fd-location {
+                        display: flex;
+                        align-items: center;
+                        margin: 0 1rem 0 2rem;
+
+                        img {
+                            width: 15px;
+                            height: 20px;
+                            margin-right: .5rem;
+                        }
+
+                        li {
+                            list-style: none;
+                            padding: 0;
+
+                            a {
+                                text-decoration: none;
+                                font-family: $main-font;
+                                color: $black;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 19px;
+                                transition: all .3s ease-in-out;
+
+                                &:hover{
+                                    color: $yellow-brand;
+                                }
+                            }
+                        }
+
+                     }
+ 
+                }
+
+            }
+        }
+
+        .sub-menu {
+            border-bottom: 1px solid $light-grey;
+
+            .menu-list {
+                padding: 1rem 10% 0 0;
+                display: flex;
+                justify-content: right;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        list-style: none;
+                        padding: 0 2rem;
+
+                        a {
+                            text-decoration: none;
+                            font-family: $main-font;
+                            color: $black;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 18px;
+                            /* identical to box height */
+                            letter-spacing: 0.01em;
+                            text-transform: uppercase;
+                            transition: all .3s ease-in-out;
+
+                            &:hover{
+                                color: $yellow-brand;
+                            }
+                        }
+                    }
+
+                    button {
+                        margin-left: 3rem;
+                        padding: .4rem 1rem;
+                        background-color: $yellow-brand;
+                        border: none;
+
+                        a {
+                            border-radius: 1px;
+                            color: $black;
+                            text-decoration: none;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 14px;
+                            text-align: center;
+                            letter-spacing: 0.01em;
+                            text-transform: uppercase;
+                            font-family: $main-font;
+                        }
+                    }
+
+                    .search-icon {
+                        margin-left: 2rem;
+
+                        i {
+                            text-decoration: none;
+                            color: $black;
+                            font-size: 1.5rem;
+                            transition: all .3s ease-in-out;
+
+                            &:hover{
+                                color: $yellow-brand;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+.all-navbar .top-nav .top-menu ul li .links-clr {
+    color: $black;
+}
+
+@media only screen and (max-width: 1650px) {
+    .all-navbar .top-nav {
+        padding: 1rem 4%;
+    }
+    .all-navbar .sub-menu .menu-list {
+        padding: 1rem 8% 0 0;
+    }
+}
